@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 
 class IndexComponent extends React.Component {
   render() {
-    const data = this.props.data.allContentAuditCsv.edges
+    const data = this.props.data.allGdataCsv.edges
     return (
       <div>
         <table>
@@ -51,7 +51,7 @@ export default IndexComponent
 export const query = graphql`
   {
     __typename
-    allContentAuditCsv {
+    allGdataCsv {
       edges {
         node {
           Blog_post_title
